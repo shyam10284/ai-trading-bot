@@ -114,5 +114,23 @@ def run_bot():
             print(f"Error occurred: {e}")
             time.sleep(60)
 
-if __name__ == "__main__":
+import threading
+from flask import Flask
+import os
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "AI Bot is Online and Trading!"
+
+def start_bot_in_background():
     run_bot()
+
+if __name__ == "__main__":
+    # 1. Start the trading bot in the background
+    threading.Thread(target=start_bot_in_background).start()
+    
+    # 2. Start the fake website so the cloud server doesn't crash
+    port = int(os.environ.get('PORT', 8080))
+    app.run(host="0.0.0.0", port=port)
