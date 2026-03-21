@@ -9,8 +9,8 @@ from sklearn.ensemble import RandomForestClassifier
 # --- CONFIGURATION ---
 SYMBOL = 'BTC/USDT'
 TIMEFRAME = '5m' 
-TELEGRAM_BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN' # Paste your token
-TELEGRAM_CHAT_ID = 'YOUR_TELEGRAM_CHAT_ID'     # Paste your ID
+TELEGRAM_BOT_TOKEN = '8624719861:AAHYU02Kp7fb-UDU1HP9L2XeaWYEbaIre4s'
+TELEGRAM_CHAT_ID = '7076515356'
 
 exchange = ccxt.kucoin()
 
