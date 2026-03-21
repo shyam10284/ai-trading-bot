@@ -7,8 +7,8 @@ from datetime import datetime
 # --- CONFIGURATION ---
 SYMBOL = 'BTC/USDT'
 TIMEFRAME = '5m' # 5-minute chart like in your image
-TELEGRAM_BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
-TELEGRAM_CHAT_ID = 'YOUR_TELEGRAM_CHAT_ID'
+TELEGRAM_BOT_TOKEN = '8624719861:AAHYU02Kp7fb-UDU1HP9L2XeaWYEbaIre4s'
+TELEGRAM_CHAT_ID = '7076515356'
 
 # Initialize exchange (using Binance as an example for free data)
 exchange = ccxt.binance()
@@ -59,7 +59,7 @@ def ai_strategy_logic(df):
 
         # Format the message to look like your group promo/chart
         message = (
-            f"🚨 *AI Buy Observation* 🚨\n"
+            f" *AI Buy Observation* \n"
             f"Asset: {SYMBOL}\n"
             f"Price: `${entry_price:.2f}`\n\n"
             f" *Ref SL:* `${stop_loss:.2f}`\n"
