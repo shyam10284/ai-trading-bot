@@ -62,10 +62,10 @@ def ai_strategy_logic(df):
             f"🚨 *AI Buy Observation* 🚨\n"
             f"Asset: {SYMBOL}\n"
             f"Price: `${entry_price:.2f}`\n\n"
-            f"🛑 *Ref SL:* `${stop_loss:.2f}`\n"
-            f"✅ *Ref Lvl 1:* `${target_1:.2f}`\n"
-            f"🚀 *Ref Lvl 2:* `${target_2:.2f}`\n\n"
-            f"⏱ Time: {signal_time}"
+            f" *Ref SL:* `${stop_loss:.2f}`\n"
+            f" *Ref Lvl 1:* `${target_1:.2f}`\n"
+            f" *Ref Lvl 2:* `${target_2:.2f}`\n\n"
+            f" Time: {signal_time}"
         )
         send_telegram_signal(message)
     else:
