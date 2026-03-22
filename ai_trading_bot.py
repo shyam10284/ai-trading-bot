@@ -5,6 +5,15 @@ import requests
 import time
 from datetime import datetime
 from sklearn.ensemble import RandomForestClassifier
+from flask import Flask
+import threading
+import os
+
+app = Flask(__name__)
+
+@app.route('/')
+def keep_alive():
+    return "AI Bot is Online and Trading!"
 
 # --- CONFIGURATION ---
 SYMBOL = 'BTC/USDT'
@@ -127,10 +136,12 @@ def home():
 def start_bot_in_background():
     run_bot()
 
-if __name__ == "__main__":
-    # 1. Start the trading bot in the background
-    threading.Thread(target=start_bot_in_background).start()
+if __name__ == '__main__':
+    # 1. Start your bot in the background
+    # (Change 'your_main_bot_function' to whatever your actual function is named!)
+    bot_thread = threading.Thread(target=your_main_bot_function)
+    bot_thread.start()
     
-    # 2. Start the fake website so the cloud server doesn't crash
-    port = int(os.environ.get('PORT', 8080))
-    app.run(host="0.0.0.0", port=port)
+    # 2. Start the web server to answer the door for Render & UptimeRobot
+    port = int(os.environ.get('PORT', 10000))
+    app.run(host='0.0.0.0', port=port)
