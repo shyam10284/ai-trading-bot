@@ -1,5 +1,5 @@
-ccxt==4.2.51
-pandas==2.2.1
-requests==2.31.0
-scikit-learn==1.4.1.post1
-flask==3.0.2
+ccxt
+pandas
+requests
+scikit-learn
+flask
