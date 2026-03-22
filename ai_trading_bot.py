@@ -139,7 +139,7 @@ def start_bot_in_background():
 if __name__ == '__main__':
     # 1. Start your bot in the background
     # (Change 'your_main_bot_function' to whatever your actual function is named!)
-    bot_thread = threading.Thread(target=your_main_bot_function)
+    bot_thread = threading.Thread(target=run_bot)
     bot_thread.start()
     
     # 2. Start the web server to answer the door for Render & UptimeRobot
