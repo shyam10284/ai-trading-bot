@@ -3,18 +3,18 @@
 ⚠️ Disclaimer
 This project is for educational purposes only. I am not a financial advisor. Cryptocurrency trading carries significant risk. Never trade with money you cannot afford to lose. The creator of this bot is not responsible for any financial losses incurred while using this software.
 
-# 📈 AI Crypto Trading Bot
+#  AI Crypto Trading Bot
 
 A fully autonomous, Machine Learning-powered cryptocurrency trading bot that analyzes market data, generates buy/sell signals, and sends real-time alerts via Telegram. This bot is designed to run 24/7 in the cloud.
 
-## ✨ Features
+##  Features
 * **Automated Market Analysis:** Fetches real-time price data using the KuCoin API (via `ccxt`).
 * **Machine Learning Predictions:** Uses `scikit-learn` to analyze trends and generate intelligent trading signals.
 * **Real-Time Telegram Alerts:** Instantly messages your phone with Buy/Sell recommendations.
 * **Cloud-Native & Always On:** Wrapped in a Flask web server and deployed on Render, kept continuously awake using UptimeRobot.
 * **Secure Setup:** Uses Environment Variables to keep API keys and Bot Tokens 100% hidden and secure.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 * **Language:** Python 3
 * **Web Framework:** Flask
 * **Data & ML:** Pandas, Scikit-Learn
@@ -22,7 +22,7 @@ A fully autonomous, Machine Learning-powered cryptocurrency trading bot that ana
 * **Cloud Hosting:** Render
 * **Monitoring:** UptimeRobot
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 ### 1. Prerequisites
 You will need to create a few free accounts and get your API keys:
